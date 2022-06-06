@@ -13,11 +13,16 @@
     3. Layout
         3.1 Reusables
         3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
+    4. Header
+    5. Main section
+       5.1 Main section 1
+       5.2 Main section 2
+       5.3 Main section 3
+ */
+ */
+ */
+
+ */
 ////////////////////////*/
 
 
@@ -39,9 +44,8 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 
 /* --------------- 3.2 Other --------------------------- */
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
 
-/* --------------- 4.1 Header ------------------------- */
+/* --------------- 4. Header ------------------------- */
 
 header {
     font-family: 'Merriweather', serif;
@@ -71,8 +75,11 @@ article {
     text-align: center;
     padding: 100px;
 }
-h1 {
+h1.blocktext {
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
 }
 
 p {
@@ -109,7 +116,7 @@ button {
     border: none;
     box-shadow: 0 8px 16px darkblue;
     letter-spacing: 1px;
-    font-size: small;
+    font-variant: all-small-caps;
 }
 
 .squiggle-line {
@@ -121,13 +128,165 @@ button {
 }
 
 
-.squiggle {
 
+/* --------------- 5.1 Main Section 1 ------------------- */
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-section {
+    flex-basis: 1600px;
+    flex-direction: column;
+    background-color: white;
+}
+
+h2 {
+    font-family: Merriweather, sans-serif;
+    color: #5722CD;
+    padding: 10px;
+    font-size: medium;
+}
+h2.blocktext2 {
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 27em;
+
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+/* --------------- 5.2 Main Section 2 ------------------- */
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.article-page {
+    display: flex;
+    flex-basis: 1600px;
+    flex-direction: column;
+    background-color: #F3F6F9;
+}
+
+.article-containers {
+    display: flex;
+    flex-direction: row;
+    color: #0C0C0C;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    font-size: large;
+}
+
+.div-class-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.div-class-container p {
+    margin: 40px 0 ;
+    text-align: left;
+}
+
+.squiggle-line2 {
+    width: 50px;
+    height: 10px;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 700px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin-left: 50px;
 }
 
 
 
-/* --------------- 4.2 Introduction ------------------- */
+h5 {
+    font-variant: all-small-caps;
+    letter-spacing: 1px;
+    color: #5722CD;
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
+}
 
+
+/* --------------- 5.3 Main Section 3 ------------------- */
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+    color: #0C0C0C;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 0 0;
+}
+
+.image-wrapper1 {
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#border-demo {
+    border: 2px solid #5722CD;
+}
+
+
+/* --------------- 5.4 Main Section 4 ------------------- */
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container-form {
+    background-color: #5722CD;
+    display: flex;
+    flex-basis: 1600px;
+}
+
+#idh1 {
+    color: white;
+}
