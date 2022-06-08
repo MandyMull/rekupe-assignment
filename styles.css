@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@300&display=swap');
+
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -11,6 +19,15 @@
         etc.
     5. Media Queries
 ////////////////////////*/
+
+
+/* Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
@@ -26,6 +43,91 @@
 
 /* --------------- 4.1 Header ------------------------- */
 
+header {
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    color: #0C0C0C;
+    position: relative;
+}
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-content {
+    flex-basis: 1600px;
+    flex-direction: column;
+    background: rgb(74,65,225);
+    background: linear-gradient(128deg, rgba(74,65,225,1) 0%, rgba(87,34,205,1) 64%);
+    align-items: center;
+    font-family: Merriweather , sans-serif;
+}
+
+article {
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Roboto, sans-serif;
+    font-size: small;
+}
+
+ul {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-basis: 300px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #ED4385;
+    color: white;
+    padding: 14px 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 16px darkblue;
+    letter-spacing: 1px;
+    font-size: small;
+}
+
+.squiggle-line {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 40px;
+    left: calc(50% - 40px)
+}
+
+
+.squiggle {
+
+}
+
+
+
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
